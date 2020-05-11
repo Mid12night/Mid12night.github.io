@@ -64,7 +64,13 @@
         padding: 18px;
         border: 2px solid;
         width: 300px;
+        margin-bottom: 140px;
     }
 
-    &-socials {}
+    &-socials {
+      a {
+          margin-right: 6px;
+      }
+    }
 }
+
