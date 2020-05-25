@@ -67,10 +67,181 @@
         margin-bottom: 140px;
     }
 
+    &-btn:hover {
+        background-color: $hover;
+        border: 2px solid $hover;
+        transition: all .3s;
+    }
+
     &-socials {
-      a {
-          margin-right: 6px;
-      }
+        a {
+            position: relative;
+            margin-right: 6px;
+            border: 1px solid #fff;
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+
+            img {
+                position: absolute;
+            }
+
+            .vk {
+                top: 9px;
+                left: 5px;
+            }
+
+            .fb {
+                top: 7px;
+                right: 9px;
+            }
+
+            .inst {
+                top: 6px;
+                right: 6px;
+            }
+        }
+
+        a:hover {
+            background-color: $hover;
+            border: 1px solid $hover;
+            transition: all .3s;
+        }
+    }
+
+}
+
+.about {
+    background-color: #f8f2e4;
+    padding: 50px 0;
+
+    &__inner {
+        display: flex;
+    }
+
+    &__box {
+        max-width: 400px;
+        margin-left: 80px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    &__box-title {
+        font-size: 24px;
+
+    }
+
+    &__box-title span {
+        display: block;
+        font-size: 48px;
+        text-transform: uppercase;
+        padding: 8px 0 37px;
+    }
+
+    &__box-text {
+        font-weight: 300;
+        padding-bottom: 35px;
+    }
+
+    li {
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: 300;
+        padding-bottom: 20px;
+        position: relative;
+        margin-left: 50px;
+    }
+
+    .yoga::before {
+        content: '';
+        background-image: url(../images/icons/mat-icon.svg);
+        width: 30px;
+        height: 20px;
+        position: absolute;
+        left: -50px;
+        top: -4px;
+
+    }
+
+    .sea::before {
+        content: '';
+        background-image: url(../images/icons/sea_icon.svg);
+        width: 30px;
+        height: 24px;
+        position: absolute;
+        left: -50px;
+        top: -7px;
+    }
+
+    .travel::before {
+        content: '';
+        background-image: url(../images/icons/paper-plane_icon.svg);
+        width: 27px;
+        height: 28px;
+        position: absolute;
+        left: -50px;
+        top: -3px;
     }
 }
 
+.advantages {
+    background-color: #fff;
+
+    &__inner {
+        padding: 70px 0 70px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        text-align: center;
+        font-size: 36px;
+        font-weight: 500;
+        padding-bottom: 25px;
+    }
+
+    &__img {
+        width: 118px;
+        height: 6px;
+        margin: 0 auto;
+        margin-bottom: 65px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+}
+
+.advantages__inner-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.advantages__item {
+    margin-bottom: 45px;
+    flex-basis: calc(33.3333%);
+    height: 240px;
+
+    &-img {
+        width: 170px;
+        height: 170px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    &-text {
+        text-align: center;
+        font-weight: 400;
+
+        span {
+            display: block;
+        }
+    }
+
+}
+
+.expectations-slider {
+    padding: 70px 0 70px;
+}

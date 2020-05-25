@@ -17,12 +17,14 @@ a {
 ul,
 li {
     margin: 0;
+    padding: 0;
     overflow: 0;
     list-style: none;
 }
 
 body {
-    font-family: 'Roboto-Regular', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
     color: #000;
 }
 
@@ -30,4 +32,9 @@ body {
     max-width: 1030px;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+.container-fluid {
+    max-width: 100%;
+    margin: 0 auto;
 }
