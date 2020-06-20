@@ -6,10 +6,21 @@ $(function () {
         infinite: true,
         slidesToShow: 2,
         slidesToScroll: 1,
-        autoplay: false,
-        autoplaySpeed: 2000,
-        speed: 1000,
+        autoplay: true,
+        autoplaySpeed: 7000,
+        speed: 2000,
         arrows: false,
+    });
+
+    $('.single-item').slick({
+        arrows: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        autoplay: false,
+        autoplaySpeed: 4000,
+        speed: 2000,
+        infinite: true,
     });
 
 });
