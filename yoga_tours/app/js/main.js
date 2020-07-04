@@ -9,7 +9,7 @@ $(function () {
         autoplay: true,
         autoplaySpeed: 7000,
         speed: 2000,
-        arrows: false,
+        arrows: false
     });
 
     $('.single-item').slick({
@@ -20,7 +20,13 @@ $(function () {
         autoplay: false,
         autoplaySpeed: 4000,
         speed: 2000,
+        infinite: true
+    });
+
+    $('.comment-slider__inner').slick({
+        dots: true,
         infinite: true,
+        arrows:true
     });
 
 });
