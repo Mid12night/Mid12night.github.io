@@ -9,13 +9,29 @@ html {
 }
 
 * {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 html,
 body {
     height: 100%;
+}
+
+.title-line {
+    width: 130px;
+    height: 60px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 45px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.main-title {
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 36px;
 }
 
 .wrapper {
@@ -61,10 +77,4 @@ body {
 .container-fluid {
     max-width: 100%;
     margin: 0 auto;
-}
-
-.container__ayurvedic-center {
-    max-width: 1030px;
-    margin: 0 auto;
-    padding: 0 15px;
 }
